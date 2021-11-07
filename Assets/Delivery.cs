@@ -12,6 +12,7 @@ public class Delivery : MonoBehaviour
 
     void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = noPackageColor;
     }
 
     void OnCollisionEnter2D(Collision2D other) {
