@@ -2831,10 +2831,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de55eaaae0d3a67418572a1b8aa22cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steerSpeed: 250
-  moveSpeed: 15
-  slowSpeed: 5
-  boostSpeed: 30
+  steerSpeed: 200
+  moveSpeed: 0
+  breakingPower: 0.1
+  maxForwardSpeed: 35
+  maxBackwardSpeed: 10
+  acceleration: 0.075
+  deceleration: 0.05
 --- !u!212 &1369126718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2876,7 +2879,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 91bb7a66976fa234d8e673d48d8d6c6a, type: 3}
-  m_Color: {r: 1, g: 0.9013662, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2935,7 +2938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noPackageColor:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278253311
   destroyDelay: 0.5
 --- !u!61 &1369126722
 BoxCollider2D:
