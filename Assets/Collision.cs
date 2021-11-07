@@ -8,4 +8,9 @@ public class Collision : MonoBehaviour
         Debug.Log("Collided with: " + other.gameObject.name);
         
     }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("Collided with: " + other.gameObject.name);
+        
+    }
 }
